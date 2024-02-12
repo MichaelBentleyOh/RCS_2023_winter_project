@@ -16,6 +16,16 @@ theory
   -inverse kinematics
   
 matlab simulation
-  circle drawing simulation based on learned theories, demonstrating geometric and numerical analysis through the implementation of simulations for each a two-link planar robot and a three-link planar robot.
+   circle drawing simulation based on learned theories, demonstrating geometric and numerical analysis through the implementation of simulations for each a two-link planar robot and a three-link planar robot.
 
-arduino Actual 
+arduino Actual Implementation
+   Implementation of a three-link planar robot simulation using Dynamixel.
+   supplies 
+   -3d printer
+   -Dynamixel motors * 3
+   -
+
+
+
+
+   

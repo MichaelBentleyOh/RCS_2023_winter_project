@@ -1,7 +1,7 @@
 // Note
 //Make sure to run the code with the ID set to your configured value for DXL
 //In actual modeling, it is important to note that there is a limitation of 180 degrees 
-//for the motor's range of motion, so it must be taken into account when writing the code.
+//for the motor's range of motion, so it must be taken into account when modifying the code.
 //Trigonometric functions only accept radian values, so be mindful of unit conversion.
 
 #include <Dynamixel2Arduino.h>
@@ -25,14 +25,13 @@ Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
 //This namespace is required to use Control table item names
 using namespace ControlTableItem;
 
-//Set DXL_ID
+//Set your DXL_ID
 const uint8_t DXL_ID_0 = 0;
 const uint8_t DXL_ID_1 = 1;
 
 //Set the offset angle of motor.
 float j0_off  = 180.0f;//[deg]
 float j1_off  = 180.0f;//[deg]
-
 
 
 void setup() {

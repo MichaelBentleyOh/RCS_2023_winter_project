@@ -1,3 +1,8 @@
+// Note
+//This code is for setting the motor angle.
+//Make sure to run the code with the ID set to your configured value for dynamixel.
+//When you connect the "motor" and "link", make sure you have this code running when you assemble it.
+
 #include <Dynamixel2Arduino.h>
 #include <math.h>
 
@@ -16,7 +21,6 @@ const float DXL_PROTOCOL_VERSION = 2.0;
 
 Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
 
-
 const uint8_t DXL_ID_0 = 0;
 const uint8_t DXL_ID_1 = 1;
 const uint8_t DXL_ID_2 = 2;
@@ -25,7 +29,6 @@ const uint8_t DXL_ID_2 = 2;
 float j0_off  = 180.0f;//[deg]
 float j1_off  = 180.0f;//[deg]
 float j2_off  = 180.0f;//[deg]
-
 
 
 void setup() {
@@ -59,5 +62,4 @@ void loop() {
   dxl.setGoalPosition(DXL_ID_0,j0_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_1,j1_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_1,j2_off, UNIT_DEGREE);
-
 }

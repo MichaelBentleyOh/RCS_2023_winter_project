@@ -54,46 +54,51 @@ void setup() {
   dxl.setOperatingMode(DXL_ID_1, OP_POSITION);
   dxl.torqueOn(DXL_ID_1);
 
-  // Set to return to the motor's offset value at the initial start
+  //Set profile of velocity&acceleration
+  dxl.writeControlTableItem(PROFILE_ACCELERATION, DXL_ID_0, 20);
+  dxl.writeControlTableItem(PROFILE_VELOCITY, DXL_ID_0, 200);
+  dxl.writeControlTableItem(PROFILE_ACCELERATION, DXL_ID_1, 20);
+  dxl.writeControlTableItem(PROFILE_VELOCITY, DXL_ID_1, 200);
+
+  //Set to return to the motor's offset value at the initial start
   dxl.setGoalPosition(DXL_ID_0, j0_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_1, j1_off, UNIT_DEGREE);
   delay(1000);
 }
 
-int l1 = 10;  // link1 length
-int l2 = 10;  // link2 length
-int radius = 12;  //end effector's radius
+int l1 = 10;  //Link1 length
+int l2 = 10;  //Link2 length
+int radius = 12;  //End Effector's radius
 int theta = 0;  //The angle formed between the end effector and the base
-float q1_IK = 0.0f;
-float q2_IK = 0.0f;
+float q1_IK = 0.0f;  //Initialize q1_IK
+float q2_IK = 0.0f;  //Initialize q2_IK
 void two_link_IK(int radius, int l1, int l2, float px, float py);
 
 void loop() {
+    //End Effector's trajectory px, py
     float px = radius * cos(radians(theta));
     float py = radius * sin(radians(theta));
 
-    // Inverse Kinematics
+    //Inverse Kinematics
     two_link_IK(radius, l1, l2, px, py);
 
     // Serial.println(theta);
     // Serial.println(q1_IK);
     // Serial.println(q2_IK);
 
-    // Set position commands to Dynamixel motors
+    //Set position commands to Dynamixel motors
     delay(10);
     dxl.setGoalPosition(DXL_ID_0, q1_IK + j0_off, UNIT_DEGREE);
     dxl.setGoalPosition(DXL_ID_1, q2_IK + j1_off, UNIT_DEGREE);
 
-    //Setting limits on the theta value
+    //Setting limits on the theta
     theta += 1;
     if (theta >= 90) {
       theta -= 180;
     }
-
 }
-s
 
-//refer to inverse kinematics theory
+//Refer to inverse kinematics theory
 void two_link_IK(int radius, int l1, int l2, float px, float py) {
   int c2 = (radius * radius - l1 * l1 - l2 * l2) / (2 * l1 * l2);
   int s2 = sqrt(1 - c2 * c2);

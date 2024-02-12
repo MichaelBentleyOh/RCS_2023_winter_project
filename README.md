@@ -21,9 +21,12 @@ matlab simulation
 arduino Actual Implementation
    Implementation of a three-link planar robot simulation using Dynamixel.
    supplies 
-   -3d printer
+   -3d printed links
    -Dynamixel motors * 3
-   -
+   -OpenRB-150
+   -Powersupply 12V 3A (refer to datasheet)
+   -connection wire (manual extented)
+   
 
 
 

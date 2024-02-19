@@ -1,4 +1,5 @@
 // Note
+//The dynamixel only recognizes degrees from 0 to 359.
 //Make sure to run the code with the ID set to your configured value for DXL
 //In actual modeling, it is important to note that there is a limitation of 180 degrees 
 //for the motor's range of motion, so it must be taken into account when modifying the code.

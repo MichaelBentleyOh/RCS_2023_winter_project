@@ -60,7 +60,7 @@ void setup() {
   dxl.writeControlTableItem(PROFILE_ACCELERATION, DXL_ID_1, 20);
   dxl.writeControlTableItem(PROFILE_VELOCITY, DXL_ID_1, 200);
 
-  //Set to return to the motor's offset value at the initial start
+  //Motor runs at the offset value
   dxl.setGoalPosition(DXL_ID_0, j0_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_1, j1_off, UNIT_DEGREE);
   delay(1000);
@@ -72,6 +72,7 @@ int radius = 12;  //End Effector's radius
 int theta = 0;  //The angle formed between the end effector and the base
 float q1_IK = 0.0f;  //Initialize q1_IK
 float q2_IK = 0.0f;  //Initialize q2_IK
+
 void two_link_IK(int radius, int l1, int l2, float px, float py);
 
 void loop() {

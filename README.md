@@ -10,11 +10,11 @@ Table of contents
    1. Architecture
    2. Source Code
 
-theory
+Theory
 ===========
   This section describes the basic learning content for the mechanical analysis of a robotic arm.
   
-  **contents**
+  ### contents
   
   - rotation matrix 
   
@@ -24,15 +24,15 @@ theory
   
   - inverse kinematics
   
-matlab simulation
+Matlab Simulation
 ===========
    circle drawing simulation based on learned theories, demonstrating geometric and numerical analysis through the implementation of simulations for each a two-link planar robot and a three-link planar robot.
 
-arduino Actual Implementation
+Arduino Actual Implementation
 ===========
    Implementation of a three-link planar robot simulation using Dynamixel.
    
-   **supplies** 
+   ### supplies
    
    - 3d printed links
    

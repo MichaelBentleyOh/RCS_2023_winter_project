@@ -66,10 +66,12 @@ void setup() {
   dxl.writeControlTableItem(PROFILE_VELOCITY, DXL_ID_1, 200);
   dxl.writeControlTableItem(PROFILE_ACCELERATION, DXL_ID_2, 20);
   dxl.writeControlTableItem(PROFILE_VELOCITY, DXL_ID_2, 200);
+
+  //Motor runs at the offset value.
   dxl.setGoalPosition(DXL_ID_0, j0_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_1, j1_off, UNIT_DEGREE);
   dxl.setGoalPosition(DXL_ID_2, j2_off, UNIT_DEGREE);
-  delay(5000);
+  delay(1000);
 }
 
 int l1 = 20;  // Link1 length

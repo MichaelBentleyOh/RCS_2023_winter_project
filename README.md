@@ -14,15 +14,15 @@ Table of contents
 ===========
   This section describes the basic learning content for the mechanical analysis of a robotic arm.
   
-  contents
+  **contents**
   
-  -rotation matrix 
+  - rotation matrix 
   
-  -DH parameter
+  - DH parameter
   
-  -forward kinematics
+  - forward kinematics
   
-  -inverse kinematics
+  - inverse kinematics
   
 **matlab simulation**
 ===========
@@ -32,17 +32,17 @@ Table of contents
 ===========
    Implementation of a three-link planar robot simulation using Dynamixel.
    
-   supplies 
+   **supplies** 
    
-   -3d printed links
+   - 3d printed links
    
-   -Dynamixel motors * 3
+   - Dynamixel motors * 3
    
-   -OpenRB-150
+   - OpenRB-150
    
-   -Powersupply 12V 3A (refer to datasheet)
+   - Powersupply 12V 3A (refer to datasheet)
    
-   -connection wire (manual extented)
+   - connection wire (manual extented)
    
 
 

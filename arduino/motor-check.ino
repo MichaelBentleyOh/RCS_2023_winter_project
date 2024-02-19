@@ -4,7 +4,6 @@
 //When you connect the "motor" and "link", make sure you have this code running when you assemble it.
 
 #include <Dynamixel2Arduino.h>
-#include <math.h>
 
 #if defined(ARDUINO_OpenRB)  // When using OpenRB-150
 //OpenRB does not require the DIR control pin.

@@ -2,6 +2,10 @@
 
 The RCS_2023_winter_project, hosted at Korea Aerospace University from December 30, 2023, to February 29, 2024, encompasses a comprehensive study on basic robotics, focusing on two-link planar and three-link planar robots, covering theoretical foundations, MATLAB simulations for circle drawing, and practical implementations of three-link planar robot using Arduino with Dynamixel motors.
 
+![KakaoTalk_20240220_133447436](https://github.com/choiwongang/RCS_2023_winter_project/assets/83582669/772ee5ea-1494-4034-ae10-83063c42db94)
+
+
+
 Table of contents
 ==========
 - theory

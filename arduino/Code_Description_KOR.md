@@ -78,7 +78,7 @@ int l2 = 20;  // Link2 length
 int l3 = 10;  // Link3 length
 int radius = 5; // End Effector's radius
 int theta = 0;  //Initialize theta
-float phi = 70.f; // const(q1+q2+q3)
+float phi = 70.f; // End Effector's angle(const) = q1_IK + q2_IK + q3_IK
 float q1_IK;  //Initialize q1_IK
 float q2_IK;  //Initialize q2_IK
 float q3_IK;  //Initialize q3_IK

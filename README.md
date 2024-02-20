@@ -5,10 +5,10 @@ The RCS_2023_winter_project, hosted at Korea Aerospace University from December 
 Table of contents
 ==========
 - theory
-1. matlab Simulation
-2. arduino Actual Implementation
-   1. Architecture
-   2. Source Code
+- matlab Simulation
+- arduino Actual Implementation
+  - Architecture
+  - Source Code
 
 Theory
 ===========

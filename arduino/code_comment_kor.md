@@ -87,6 +87,7 @@ void three_link_IK(int l1, int l2, int l3, float px, float py, float phi);
 ```
 - 코드에 필요한 변수들을 선언하였다.
 - 코드를 조금 더 깔끔하게 적기위해 함수*three_link_IK*를 선언하였고, 함수는 코드 제일 하단부에 정의하였다.
+- c2의 값이 1인 경우, s2의 값이 0이 된다. 이는 c1, s1의 분자에 0이 곱해지는 효과가 나타나므로, 이를 방지하기 위해 phi 값을 70도로 제한.
 ---
 **three_link_IK**
 ```c

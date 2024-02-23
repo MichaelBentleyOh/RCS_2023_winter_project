@@ -31,6 +31,8 @@ Theory
 Matlab Simulation
 ===========
    circle drawing simulation based on learned theories, demonstrating geometric and numerical analysis through the implementation of simulations for each a two-link planar robot and a three-link planar robot.
+   ![KakaoTalk_20240220_134146524](https://github.com/choiwongang/RCS_2023_winter_project/assets/145263884/d0d24d77-c989-48e7-b6e5-8e6120b64606)
+
 
 Arduino Actual Implementation
 ===========
